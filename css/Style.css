@@ -1,4 +1,8 @@
-html,body{margin:0;padding:0}
+html,body
+{
+	margin:0;
+	padding:0;
+}
 body
 {
 	font: 76% arial,sans-serif;
@@ -7,13 +11,11 @@ body
 	-o-background-size: 100% 100%; /* Для браузера Opera */
 	-moz-background-size: 100% 100%; /* Для MozillaFireFox */
 	background-attachment:scroll;
-	background: url("../images/body1.jpg") no-repeat right;
+	/*background: url("../images/cube.jpg") no-repeat right;*/
 }
-p{margin:0 10px 10px}
-a{display:block;color: #981793;padding:10px}
 
-#header {
-	background: url("../images/font.jpg") no-repeat center;
+#header 
+{	
 	height:150px;
 }
 
@@ -21,31 +23,36 @@ a{display:block;color: #981793;padding:10px}
   height:auto !important;
   height:100%;
   min-height:100%;
+  position: relative;
 }
 
-
+#clearLeft
+{
+	float:left; 
+	width: 200px;
+}
 
 #container {
-  min-width:800px;
+  min-width:550px;
 } 
 #center 
 {
-	margin:0px 200px 0px 200px;
+	margin:0px 200px 0px 520px;
 	text-align: justify;
 	text-indent: 10px;
+	width:650px;
 }
 #left 
 {
-	width: 960px;
-	margin: 60px auto;
-	border: 1px solid LightBlue;
-	background-color: LightGrey;
-	background-image: -moz-linear-gradient(White, LightGrey);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(White), to(LightGrey));
-	background-image: -webkit-linear-gradient(White, LightGrey);
-	background-image: -o-linear-gradient(White, LightGrey);
-	background-image: -ms-linear-gradient(White, LightGrey);
-	background-image: linear-gradient(White, LightGrey);
+	margin: 0px auto 0px 200px;
+	border: 1px solid White;
+	background-color: LightBlue;
+	background-image: -moz-linear-gradient(White, LightBlue);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(White), to(LightBlue));
+	background-image: -webkit-linear-gradient(White, LightBlue);
+	background-image: -o-linear-gradient(White, LightBlue);
+	background-image: -ms-linear-gradient(White, LightBlue);
+	background-image: linear-gradient(White, LightBlue);
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
@@ -53,7 +60,7 @@ a{display:block;color: #981793;padding:10px}
 	-webkit-box-shadow: 0 1px 1px Blue;
 	box-shadow: 0 1px 1px Blue;
 	float:left; 
-	width:200px;
+	width:300px;
 	text-align: left;
 }
 
@@ -83,14 +90,7 @@ a{display:block;color: #981793;padding:10px}
 	_line-height: 0; /*IE6 only*/
 	-moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666
 	-webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
-	box-shadow: 0 1px 0 #111, 0 2px 0 #666;
-}
-
-#left ul li:last-child 
-{
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
+	/*box-shadow: 0 1px 0 #111, 0 2px 0 #666;*/
 }
 
 #left ul a 
@@ -104,16 +104,6 @@ a{display:block;color: #981793;padding:10px}
 	text-transform: none;
 }
 
-#left ul a:hover 
-{
-	background-color: #0186ba;
-	background-image: -moz-linear-gradient(#04acec,  #0186ba);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
-	background-image: -webkit-linear-gradient(#04acec, #0186ba);
-	background-image: -o-linear-gradient(#04acec, #0186ba);
-	background-image: -ms-linear-gradient(#04acec, #0186ba);
-	background-image: linear-gradient(#04acec, #0186ba);
-}
 
 #right {
   float:right; 
@@ -121,8 +111,14 @@ a{display:block;color: #981793;padding:10px}
 }
 #footer 
 {
-	height:60px;
-	text-align: center;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background: LightBlue;
+	height:65px;
+	margin-top: -65 px;
+    padding: 0;
+	width: 100%;
 }
 #clear {
   clear:both;
