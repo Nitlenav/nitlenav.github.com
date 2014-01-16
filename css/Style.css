@@ -8,7 +8,7 @@ body
 	font: 76% arial,sans-serif;
 	text-align:center;
 	background-size: 100% 100%; /* первые 100% - ширина, вторые 100% - высота */ 
-	/*-o-background-size: 100% 100%; /* Для браузера Opera */
+	-o-background-size: 100% 100%; /* Для браузера Opera */
 	-moz-background-size: 100% 100%; /* Для MozillaFireFox */
 	background-attachment:scroll;
 	/*background: url("../images/cube.jpg") no-repeat right;*/
